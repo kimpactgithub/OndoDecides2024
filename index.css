@@ -1,0 +1,533 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #B0B0B0;
+  background-color: #13161A;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.Full_view {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+
+/* Options and Filters Section */
+.options_and_filters_section {
+  width: 15%;
+  background-color: #13161A;
+  padding: 1rem;
+  overflow-y: auto;
+  color: #B0B0B0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-left: 35px;
+  margin-top: 65px;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+.options_and_filters_section h2 {
+  color: coral;
+}
+
+.filters label {
+  display: block;
+  margin: 0.5rem 0;
+}
+
+hr {
+  border: 0.2px solid #303030;
+  width: 100%;
+  margin: 10px 0;
+}
+
+/* Analysis Section */
+.Analysis_section {
+  width: 85%;
+  background-color: #0C0F12;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  color: #B0B0B0;
+}
+
+.header_nav {
+  /* background-color: #131619; */
+  background-color: #131619; /* Set background color */
+  padding: 20px;
+  color: #B0B0B0;
+  text-align: center;
+  border-bottom: 3px solid transparent; /* Create space for border */
+  border-image: linear-gradient(to right, #009eeb, #ec2637, #40c0bf, coral);
+  border-image-slice: 1; /* Applies the gradient only to the bottom border */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.DashboardTitle{
+  display: flex;
+  flex-direction: row;
+  gap: 60px;
+  align-items: center;
+}
+
+.titleContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: flex-start;
+}
+
+.kdiLogoContainer {
+  width: 155px;
+}
+
+.kdiLogo {
+  width: 100%;
+}
+
+h1 {
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header_nav h2 {
+  color: coral;
+}
+
+/* Main Analysis Row Layout */
+.main_analysis {
+  flex-grow: 1;
+  display: flex;
+  gap: 1rem;
+  padding: 20px 5px 0px 5px;
+}
+
+/* Individual Analysis Sections in Row Layout */
+.percentage_lead_chart {
+  /* flex: 1; */
+  background-color: #13181c;
+  padding: 1rem;
+  border-radius: 15px;
+  border: 1px solid #171a1d;
+  width: 325px;
+  height: 80vh;
+}
+
+.overview_result {
+  flex: 1;
+  /* background-color: #1A1C20; */
+  padding: 1rem;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center items horizontally */
+  text-align: center; /* Center text inside each element */
+}
+
+/* Inconsistency Cards Column Layout */
+.inconsistency_cards {
+  display: flex;
+  flex-direction: column;
+  color: #B0B0B0;
+  font-family: Helvetica;
+  font-size: 10px;
+  gap: 10px;
+}
+
+.liveUpdateTime {
+  color: #B0B0B0;
+  font-family: Helvetica;
+  font-size: 16px;
+  text-align: left;
+  font-weight: 600;
+}
+
+/* Apply Same Border and Background as Percentage Lead Chart */
+.card {
+  background-color: #13181c;
+  padding: 1rem;
+  border-radius: 10px;
+  border: 1px solid #171a1d;
+  text-align: center;
+  height: 105px;
+  width: 160px;
+}
+
+
+.small_Texts{
+  color: #B0B0B0;
+  font-family: Helvetica;
+  font-size: 12px;
+}
+
+.small_Texts_highlight{
+  color:coral !important;
+  font-family: Helvetica;
+  font-size: 9px;
+}
+
+.small_texts_nohighlights{
+  color: coral !important;
+  font-family: Helvetica;
+  font-size: 11px;
+  line-height: 20px;
+}
+
+.small_texts_nohighlights:hover{
+  cursor: pointer;
+}
+
+.chart_info{
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  width: 70px;
+}
+
+.chart_heading{
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.Header_Texts{
+  color: coral;
+  font-family: Helvetica;
+  font-size: 17px;
+}
+
+.infographs_Numbers{
+  color: #B0B0B0;
+  font-family: Helvetica Compressed;
+  font-size: 14px;
+}
+
+.inconsistency_titles{
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  /* margin-top: 3px; */
+}
+
+.Bigger_Headers{
+  color: #B0B0B0;
+  font-family: Helvetica;
+  font-weight: 600;
+  font-size: 15px;
+  justify-self: center;
+}
+
+p {
+  color: #B0B0B0;
+  font-family: Helvetica;
+  font-size: 11px;
+  line-height: 2;
+}
+
+h2{
+  color: coral;
+  font-family: Helvetica;
+  font-size: 13px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+label {
+  color: #B0B0B0;
+  font-family: Helvetica;
+  font-size: 11px;
+  line-height: 2;
+}
+
+/* Custom Scrollbar for Webkit Browsers (Chrome, Safari, Edge) */
+::-webkit-scrollbar {
+  width: 10px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: #22262b; /* Background color of the scrollbar track */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #1b1b1b; /* Scrollbar color */
+  border-radius: 10px;
+  border: 3px solid #262727; /* Creates a border around the thumb for a gap effect */
+}
+
+/* Hover effect for the scrollbar thumb */
+::-webkit-scrollbar-thumb:hover {
+  background-color: coral; /* Slightly darker color on hover */
+}
+
+
+.Ondo_State_Map_Container{
+  width: 70%;
+}
+
+text {
+  color: #B0B0B0;
+  font-family: helvetica;
+  font-size: 9px;
+  line-height: 2;
+}
+
+path:hover {
+  transform: scale(0.999);
+  cursor: pointer;
+  opacity: 50%;
+  transition: 0.5s;
+}
+
+
+.individualOverlayToolTip {
+  display: flex; 
+  position: absolute;
+  flex-direction: column;
+  background: #22262b;
+  padding: 8px 12px 8px 12px;
+  border-radius: 8px;
+  border: solid 12px #009eeb;
+  border-left: none;
+  border-bottom: none;
+  border-right: none;
+  /* gap: 5px; */
+  width: 290px;
+  z-index: 300000 !important;
+  padding: 10px;
+}
+
+.headerToolTip {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-family: helvetica;
+}
+
+.topThreeList {
+  display: flex;
+  flex-direction: column;
+  font-size: 11px;
+}
+
+.headerLeftSide {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.toolTipTitle{
+  font-size: 13px;
+  font-weight: 700;
+  color: coral;
+}
+
+.subTitle{
+  font-size: 10px;
+}
+
+.LGA_Name {
+  font-family: helvetica;
+  font-weight: 700;
+  font-size: 12px;
+  color: coral;
+}
+
+.LGA_Name_CALLOUT{
+  font-family: helvetica;
+  font-weight: 700;
+  font-size: 12px;
+  color: #F3A4FF;
+}
+
+.candidateAnalysis {
+  display: grid;
+  grid-auto-flow: row;
+  grid-template-rows: 25px;
+  grid-template-columns: 90px 90px 90px;
+  justify-items: space-between;
+  gap: 5px;
+}
+
+.toolTipPartyText {
+  text-align: left;
+}
+
+.card:hover{
+  cursor: pointer;
+  transform: scale(1.05);
+  transition: 0.07s;
+  opacity: 0.8;
+  border: solid 0.3px rgb(78, 64, 56);
+}
+
+.CardsValues{
+  font-family: helvetica;
+  font-weight: 700;
+  font-size: 16px;
+  color:#B0B0B0;
+}
+
+.CardValuePercentage{
+  font-family: helvetica;
+  font-weight: 700;
+  font-size: 11px;
+  color: coral;
+}
+
+.electionResultChart {
+  display: flex;
+}
+
+.chart_title_label {
+  font-family: helvetica;
+  font-size: 6px !important;
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  justify-content: space-between;
+  justify-self: center;
+}
+
+.inconsistencyDetails {
+  padding: 18px;
+  background: #303030;
+  opacity: 0.8;
+  border-radius: 10px;
+  backdrop-filter: blur(8px);
+  position: absolute;
+  margin-left: 830px;
+  width: 235px;
+  height: 340px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card_Callout_Header {
+  display: flex;
+  justify-content: space-between; /* Aligns items to left and right edges */
+  align-items: center; /* Vertically centers the items */
+}
+
+.card_Callout_Header p {
+  margin: 0;
+}
+
+.close-btn {
+  cursor: pointer;
+  font-size: 10px;
+}
+
+.callOut_LGAsWards{
+  overflow: auto;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+label:hover{
+  cursor: pointer;
+  color: coral;
+  transform: scale(1.02);
+  transition: 0.5s;
+}
+
+.comparison_section{
+  display: none;
+  flex-direction: column;
+  /* background: #22262b; */
+  width: 31%;
+  height: 81vh;
+  position: absolute;
+  font-family: helvetica;
+  z-index: 1000;
+  padding: 18px;
+  background-color: #13181c;
+  /* padding: 1rem; */
+  border-radius: 15px;
+  border: 1px solid #171a1d;
+}
+
+.mapsComparison{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.Ondo_2020_Result{
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+/* .Ondo_2024_Result{
+  display: flex;
+  flex-direction: column;
+} */
+
+.OndoMAP2020{
+  width: 485px;
+}
+
+.OndoMAP2024{
+  width: 450px;
+}
+
+.legends{
+  display: flex;
+  justify-content: center;
+}
+
+.close-btn-Comparison {
+  cursor: pointer;
+  font-size: 10px;
+  position: absolute;
+  margin-left: 315px;
+  margin-top: 7px;
+  color: coral;
+}
+
+
+.Hotspot_Map{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.HotspotMAP{
+  width: 450px;
+}
+
+.HS_close-btn-Comparison {
+  cursor: pointer;
+  font-size: 10px;
+  position: absolute;
+  margin-left: 1155px;
+  margin-top: -25px;
+}
+
+.mainHeaderAnalysis{
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.individualOverlayToolTip{
+  z-index: 10000000;
+}

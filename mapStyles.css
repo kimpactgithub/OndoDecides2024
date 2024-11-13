@@ -1,0 +1,478 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins";
+}
+
+.headerTitle {
+  background: #e1f5ff;
+  padding: 0px;
+  place-items: center;
+}
+
+.Title {
+  font-family: poppins;
+  font-weight: 600;
+  font-size: 30px;
+  text-align: center;
+}
+
+.headerNav {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 80px 10px 80px;
+  border-bottom: 5px solid transparent;
+  background: linear-gradient(white, #ffffff) padding-box,
+    linear-gradient(to right, #009eeb, #ec2637, #40c0bf, #f69336) border-box;
+}
+
+.electionIcon {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  gap: 13px;
+  border: 2px solid transparent;
+  background: linear-gradient(white, #ffffff) padding-box,
+    linear-gradient(to right, #009eeb, #ec2637, #40c0bf, #f69336) border-box;
+  border-radius: 15px;
+  align-items: center;
+}
+
+.navigationItems {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  justify-content: space-between;
+  padding: 5px 10px 5px 10px;
+  border: 0 0 4px 0;
+  border-image: linear-gradient(to right, #009eeb, #ec2637, #40c0bf, #f69336) 1;
+}
+
+.items {
+  font-family: poppins;
+  font-size: 10px;
+  cursor: pointer;
+}
+
+.items:hover {
+  font-weight: 600;
+  color: #009eeb;
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+
+.KimpactLogo {
+  width: 130px;
+  object-fit: contain;
+}
+
+.analysisBody {
+  background-color: #002f46;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 15px;
+  align-items: center;
+  height: 89vh;
+}
+
+.visualization {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  width: 90%;
+  height: 80vh;
+  align-items: center;
+}
+
+.overviewChart {
+  width: 70%;
+  display: flex;
+  margin-left: -25px;
+}
+
+#overviewChart2 {
+  width: 70%;
+  display: none;
+  margin-left: -25px;
+}
+.summaryChart {
+  display: flex;
+  flex-direction: row;
+  gap: 23px;
+  font-size: 12px;
+  outline-color: #ffffff;
+  height: 80vh;
+  align-items: center;
+}
+
+.legendTitle {
+  color: #ffffff;
+}
+
+.Candidates {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  width: 100px;
+  gap: 10px;
+  margin-top: 30px;
+  align-items: flex-end;
+}
+
+.candidateList {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  align-items: center;
+  line-height: 0.9;
+}
+
+.candidateName {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.Edo_State_Map {
+  width: 500px;
+}
+
+.filters {
+  display: flex;
+  flex-direction: column;
+  color: #ffffff;
+  gap: 20px;
+  font-size: 12px;
+}
+
+.filterLists {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.filterElement {
+  width: 100px;
+  height: 30px;
+  background-color: #009eeb;
+  border-radius: 5px;
+  padding: 5%;
+  color: #ffffff;
+}
+
+.filterElement:hover {
+  background: #39ade7;
+  cursor: pointer;
+}
+
+.st0 {
+  fill: #ffffff;
+  cursor: pointer;
+}
+
+.st0:hover {
+  transform: scale(0.999);
+  opacity: 0.5;
+}
+
+#Akoko_Edo,
+#Egor,
+#Esan_North_East,
+#Etsako_East,
+#Igueben,
+#Oredo,
+#Ovia_North_East {
+  fill: #02A526;
+}
+
+#Uhunmwonde,
+#Owan_West,
+#Owan_East,
+#Ovia_South_West,
+#Esan_Central,
+#Esan_West,
+#Esan_South_East {
+  fill: #EC293A;
+}
+
+#Orhionmwon,
+#Oredo,
+#Ikpoba_Okha,
+#Igueben,
+#Etsako_West,
+#Etsako_Central {
+  fill: #56D1E3;
+}
+
+#Akoko_Edo2, #Etsako_East2, #Etsako_Central2, #Etsako_West2, #Owan_East2 {
+  fill: #56D1E3;
+}
+
+#Uhunmwonde2, #Ikpoba_Okha2, #Oredo2, #Ovia_North_East2, #Ovia_South_West2, #Owan_West2, #Esan_West2, #Esan_Central2, #Esan_North_East2, #Esan_South_East2, #Igueben2, #Egor2, #Orhionmwon2 {
+  fill: #EC293A;
+}
+
+/* .navigationButtons{
+  color: white;
+  display: flex;
+} */
+
+.fa6-solid--magnifying-glass-plus {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cpath fill='%23000' d='M416 208c0 45.9-14.9 88.3-40 122.7l126.6 126.7c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0s208 93.1 208 208m-232 88c0 13.3 10.7 24 24 24s24-10.7 24-24v-64h64c13.3 0 24-10.7 24-24s-10.7-24-24-24h-64v-64c0-13.3-10.7-24-24-24s-24 10.7-24 24v64h-64c-13.3 0-24 10.7-24 24s10.7 24 24 24h64z'/%3E%3C/svg%3E");
+  background-color: currentColor;
+  -webkit-mask-image: var(--svg);
+  mask-image: var(--svg);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+  color: white;
+}
+
+.fa6-solid--magnifying-glass-minus {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cpath fill='%23000' d='M416 208c0 45.9-14.9 88.3-40 122.7l126.6 126.7c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0s208 93.1 208 208m-280-24c-13.3 0-24 10.7-24 24s10.7 24 24 24h144c13.3 0 24-10.7 24-24s-10.7-24-24-24z'/%3E%3C/svg%3E");
+  background-color: currentColor;
+  -webkit-mask-image: var(--svg);
+  mask-image: var(--svg);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+  color: white;
+}
+
+.individualOverlayToolTip {
+  display: none; 
+  position: absolute;
+  flex-direction: column;
+  background: #e1f5ff;
+  padding: 8px 12px 8px 12px;
+  border-radius: 10px;
+  border: solid 12px #009eeb;
+  border-left: none;
+  border-bottom: none;
+  border-right: none;
+  gap: 20px;
+  width: 300px;
+  z-index: 1000 !important;
+}
+
+.headerToolTip {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.topThreeList {
+  display: flex;
+  flex-direction: column;
+  font-size: 11px;
+}
+
+.headerLeftSide {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.toolTipTitle{
+  font-size: 13px;
+  font-weight: 700;
+  color: #009eeb;
+}
+
+.subTitle{
+  font-size: 10px;
+}
+
+.LGA_Name {
+  font-family: poppins;
+  font-weight: 700;
+  font-size: 13px;
+  color: #cacaca;
+}
+
+.candidateAnalysis {
+  display: grid;
+  grid-auto-flow: row;
+  grid-template-rows: 25px;
+  grid-template-columns: 90px 90px 90px;
+  justify-items: space-between;
+  gap: 5px;
+}
+
+.completeLGAChart {
+  display: none;
+  background: #002233;
+  border-radius: 8px;
+  width: 32.5%;
+  /* min-height: 359px; */
+  /* height: 100%; */
+  position: absolute;
+  flex-direction: column;
+  z-index: 1500;
+}
+
+.chartsFinal {
+  display: flex;
+  height: 100%;
+
+}
+
+.zondicons--close {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath fill='%23000' d='M10 8.586L2.929 1.515L1.515 2.929L8.586 10l-7.071 7.071l1.414 1.414L10 11.414l7.071 7.071l1.414-1.414L11.414 10l7.071-7.071l-1.414-1.414z'/%3E%3C/svg%3E");
+  background-color: currentColor;
+  -webkit-mask-image: var(--svg);
+  mask-image: var(--svg);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+}
+
+.completeLGAChartNav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 21px;
+}
+
+.completeLGAChartCloseButton {
+  cursor: pointer;
+}
+
+.completeLGAChartCloseButton:hover{
+  transform: scale(1.1);
+  color: #ec2637;
+}
+
+.updateTime{
+  display: flex;
+  flex-direction: row;
+  justify-items: space-between;
+  gap: 50px;
+}
+
+.timer{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-self: flex-end;
+  color: #002f46;
+  font-weight: small;
+  font-size: 12px;
+  align-self: center;
+}
+
+.mdi--pin {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M16 12V4h1V2H7v2h1v8l-2 2v2h5.2v6h1.6v-6H18v-2z'/%3E%3C/svg%3E");
+  background-color: currentColor;
+  -webkit-mask-image: var(--svg);
+  mask-image: var(--svg);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+}
+
+.mdi--human-queue {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M5 6c-1.1 0-2 .9-2 2s.9 2 2 2s2-.89 2-2s-.89-2-2-2m7-2a2 2 0 1 0 2 2c0-1.11-.89-2-2-2m7-2c-1.1 0-2 .9-2 2s.9 2 2 2s2-.89 2-2s-.89-2-2-2M3.5 11c-.83 0-1.5.67-1.5 1.5V17h1v5h4v-5h1v-4.5c0-.83-.67-1.5-1.5-1.5zm7-2C9.67 9 9 9.67 9 10.5V15h1v5h4v-5h1v-4.5c0-.83-.67-1.5-1.5-1.5zm7-2c-.83 0-1.5.67-1.5 1.5V13h1v5h4v-5h1V8.5c0-.83-.67-1.5-1.5-1.5z'/%3E%3C/svg%3E");
+  background-color: currentColor;
+  -webkit-mask-image: var(--svg);
+  mask-image: var(--svg);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+}
+
+.mdi--page-previous-outline {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M2 3h17a2 2 0 0 1 2 2v4h-2V5H2v14h17v-4h2v4a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2m15 12v-2h7v-2h-7V9l-4 3zM4 13h7v-2H4zm0-4h7V7H4zm0 8h4v-2H4z'/%3E%3C/svg%3E");
+  background-color: currentColor;
+  -webkit-mask-image: var(--svg);
+  mask-image: var(--svg);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+}
+
+.comparisonFilters{
+  display: flex;
+    flex-direction: column;
+    background: #002233;
+    height: 100%;
+    padding: 30px;
+    width: 25%;
+    color: white;
+    font-size: 11px;
+    gap: 47px;
+}
+
+.filtersUp {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+
+.filtersUp:hover {
+  cursor: pointer;
+  color: #52c5ff;
+  transform: scale(1.05);
+  transition: 0.8s;
+}
+
+.filtersUp::selection{
+  transform: scale(1.05);
+}
+
+.FilterSubsection{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.constitution_req {
+  display: flex;
+  width: 70%;
+  justify-items: center;
+}
+
+.constitutionReqText{
+  color: rgb(0, 56, 88);
+  font-size: 11px;
+  width: 50%;
+  text-align: center;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+#candidate_party_list{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
