@@ -142,11 +142,12 @@ h1 {
 /* Inconsistency Cards Column Layout */
 .inconsistency_cards {
   display: flex;
-  flex-direction: column;
-  color: #B0B0B0;
-  font-family: Helvetica;
-  font-size: 10px;
-  gap: 10px;
+      flex-direction: column;
+      color: #B0B0B0;
+      font-family: Helvetica;
+      font-size: 10px;
+      gap: 10%;
+      height: 80vh;
 }
 
 .liveUpdateTime {
@@ -277,7 +278,7 @@ label {
 
 
 .Ondo_State_Map_Container{
-  width: 70%;
+  width: 85%;
 }
 
 text {
@@ -307,7 +308,7 @@ path:hover {
   border-bottom: none;
   border-right: none;
   /* gap: 5px; */
-  width: 290px;
+  width: 200px;
   z-index: 300000 !important;
   padding: 10px;
 }
@@ -332,8 +333,8 @@ path:hover {
 }
 
 .toolTipTitle{
-  font-size: 13px;
-  font-weight: 700;
+  font-size: 10px;
+  font-weight: 600;
   color: coral;
 }
 
@@ -343,8 +344,8 @@ path:hover {
 
 .LGA_Name {
   font-family: helvetica;
-  font-weight: 700;
-  font-size: 12px;
+  font-weight: 600;
+  font-size: 10px;
   color: coral;
 }
 
